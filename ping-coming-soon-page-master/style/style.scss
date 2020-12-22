@@ -1,0 +1,114 @@
+/*Colors*/
+
+//Primary
+
+$Blue: hsl(223, 87%, 63%);
+$BlueHighlight:hsl(223, 85%, 66%);
+
+//Secondary
+
+$PaleBlue: hsl(223, 100%, 88%);
+$LightRed: hsl(354, 100%, 66%);
+
+//Neutral
+
+$Gray: hsl(0, 0%, 59%);
+$DarkBlue: hsl(209, 33%, 12%);
+
+/*Main*/
+body{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Libre Franklin', sans-serif;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    text-align: center;
+    font-size: 1.8em;
+}
+.logo{
+    padding-top: 30%;
+    width:100px;
+    height:auto;
+    margin-bottom: 20px;
+}
+h1 span{
+    color:$Gray;
+    font-weight: 400;
+}
+h3{
+    color:$Gray;
+    font-size: 1em;
+}
+.subscribe{
+    display: flex;
+    flex-direction: column;
+    padding:0 20px;
+    font-size: 1em;
+}
+.email{
+    border:1px solid $Gray;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    height:40px;
+    width:100% -25px;
+    outline:none;
+    padding: 0 25px;
+    box-shadow: 5px 5px 11px 1px rgba(0,0,0,0.25);
+}
+.button{
+    border:1px solid $Blue;
+    background-color: $Blue;
+    color:white;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: $BlueHighlight;
+    border: 1px solid $BlueHighlight;
+}
+.button:active{
+    background-color: $PaleBlue;
+    border: 1px solid $PaleBlue;
+}
+.dashboard{
+    padding:50px;
+    width: 100%;
+}
+.dashboardImg{
+    min-width: 350px;
+    width: 40%;
+    margin: 0 auto;
+    display: block;
+    height: auto;
+}
+.icon{
+    border:1px solid $Gray;
+    border-radius: 50%;
+    padding:10px;
+    color:$Blue;
+    margin:20px 5px;
+    height:2.5em;
+    width:2.5em;
+}
+footer p{
+    color:$Gray;
+}
+@media screen and (min-width: 900px){
+    .subscribe{
+        display: flex;
+        flex-direction: row;
+    }
+    .email{
+        flex-grow: 2;
+    }
+    .button{
+        margin-left: 20px;
+        flex-shrink: 1;
+    }
+}
